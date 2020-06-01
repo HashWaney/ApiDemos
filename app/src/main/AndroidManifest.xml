@@ -16,6 +16,30 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity
+            android:name=".service.view.Client"
+            android:label="@string/activity_remote_service_controller"
+            android:launchMode="singleTop">
+
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+
+            </intent-filter>
+        </activity>
+
+
+        <activity android:name=".service.view.Server">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.SAMPLE_CODE" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".service.RemoteService"
+            android:process=":remote" />
     </application>
 
 </manifest>

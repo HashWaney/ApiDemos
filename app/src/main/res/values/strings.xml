@@ -1,3 +1,18 @@
 <resources>
     <string name="app_name">apidemo</string>
+    <string name="remote_service_started">Remote Service has started</string>
+    <string name="remote_service_stopped">Remote Service has stopped</string>
+    <string name="remote_service_label">Sample Remote Service</string>
+    <string name="remote_service_controller">This demonstrates how you can implement persistent services
+        running in a separate process that may be started and stopped as desired.</string>
+    <string name="start_service">Start Service</string>
+    <string name="stop_service">Stop Service</string>
+    <string name="activity_remote_service_controller">App/Service/Remote Service Controller</string>
+    <string name="activity_remote_service_binding">App/Service/Remote Service Binding</string>
+    <string name="remote_service_binding">This demonstrates how you can connect with a persistent
+        service running in another process.  Use the kill button to see what happens when
+        the process crashes.</string>
+    <string name="bind_service">Bind Service</string>
+    <string name="kill_process">Kill Process</string>
+    <string name="unbind_service">Unbind Service</string>
 </resources>
