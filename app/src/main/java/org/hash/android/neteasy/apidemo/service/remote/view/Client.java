@@ -1,4 +1,4 @@
-package org.hash.android.neteasy.apidemo.service.view;
+package org.hash.android.neteasy.apidemo.service.remote.view;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -8,7 +8,7 @@ import android.view.View;
 import androidx.annotation.Nullable;
 
 import org.hash.android.neteasy.apidemo.R;
-import org.hash.android.neteasy.apidemo.service.RemoteService;
+import org.hash.android.neteasy.apidemo.service.remote.RemoteService;
 
 /**
  * Created by Hash on 2020/6/1.

@@ -15,4 +15,12 @@
     <string name="bind_service">Bind Service</string>
     <string name="kill_process">Kill Process</string>
     <string name="unbind_service">Unbind Service</string>
+    <string name="local_service_started">Local Service has started</string>
+    <string name="local_service_stopped">Local Service has stopped</string>
+    <string name="local_service_label">Sample Local Service</string>
+    <string name="local_service_binding">This demonstrates how you can connect with a persistent
+        service.  Notice how it automatically starts for you, and play around with the
+        interaction between this and Local Service Controller.</string>
+    <string name="local_service_controller">This demonstrates how you can implement persistent services that
+        may be started and stopped as desired.</string>
 </resources>

@@ -1,4 +1,4 @@
-package org.hash.android.neteasy.apidemo.service;
+package org.hash.android.neteasy.apidemo.service.remote;
 
 import android.app.Notification;
 import android.app.NotificationManager;
@@ -22,7 +22,8 @@ import org.hash.android.aidl.remote.IRemoteService;
 import org.hash.android.aidl.remote.IRemoteServiceCallback;
 import org.hash.android.aidl.remote.ISecondary;
 import org.hash.android.neteasy.apidemo.R;
-import org.hash.android.neteasy.apidemo.service.view.Client;
+import org.hash.android.neteasy.apidemo.service.local.LocalService;
+import org.hash.android.neteasy.apidemo.service.remote.view.Client;
 
 /**
  * Created by Hash on 2020/6/1.
@@ -32,7 +33,7 @@ import org.hash.android.neteasy.apidemo.service.view.Client;
  * that runs in a different process than the application.
  * Because it can be in another processor, we must use IPC to interact with it.
  * <p>
- * The {@link org.hash.android.neteasy.apidemo.service.view.Client} and {@link org.hash.android.neteasy.apidemo.service.view.Server} classes show how to interact with the service
+ * The {@link org.hash.android.neteasy.apidemo.service.remote.view.Client} and {@link org.hash.android.neteasy.apidemo.service.remote.view.Server} classes show how to interact with the service
  * <p>
  * Note that most applications do not need to deal with the complexity shown here, If your
  * application simply has a service running in its own process, the {@link LocalService} sample
@@ -119,7 +120,8 @@ public class RemoteService extends Service {
         CharSequence text = getText(R.string.remote_service_stopped);
 
         //The PendingIntent to launcher our activity if the user selects this notification
-        PendingIntent contentIntent = PendingIntent.getActivity(this, 0, new Intent(this, Client.class), 0);
+        PendingIntent contentIntent = PendingIntent.getActivity(this,
+                0, new Intent(this, Client.class), 0);
 
         Notification notification = new Notification.Builder(this)
                 .setSmallIcon(R.mipmap.ic_launcher)
